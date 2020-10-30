@@ -4,6 +4,8 @@ module Formtastic
   module Inputs
 
     class Select2TagsInput < Formtastic::Inputs::StringInput
+      include ActiveAdmin::Inputs::Filters::Base
+
       def input_html_options
         {
             class: 'select2-input select2-tags-input',
