@@ -2,7 +2,7 @@ module Formtastic
   module Inputs
 
     class Select2MultipleInput < Formtastic::Inputs::SelectInput
-      include ActiveAdmin::Inputs::Filters::Base
+      include ActiveAdmin::Select2::Inputs::Base
 
       def extra_input_html_options
         {
